@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contactformulier</title>
+</head>
+
+<body>
+    <nav class="menulinks">
+        <ul>
+            <li>
+                <a href="index.html"> Home</a></li>
+
+            <li><a href="oefenprojecten.html "> Oefenprojecten</a>
+            </li>
+            <li>
+                <a href="Loremipsum1.html "> Lorem Ipsum1</a>
+            </li>
+            <li>
+                <a href="Loremipsum2.html "> Lorem Ipsum2</a>
+            </li>
+            <li>
+                <a href=" about3.html "> Over mij</a></li>
+            <li>
+                <a class="active" ; href="contact.html "> Contactformulier</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>
+            <h1>Contactformulier</h1>
+        </p>
+        <form name="contact" method="POST" data-netlify="true">
+            <p><label>Naam: <input type="text" name="name" /></label></p>
+            <p><label>Emailadres: <input type="email" name="emailadress" /></label></p>
+            <p><label>Telefoonnummer: <input type="tel" name="telefoonnummer"/></label></p>
+            <p><label>Leeftijd: <input type="number" name="leeftijd" /></label></p>
+            <p><label>Geboortedatum: <input type="date" name="geboortedatum" /></label></p>
+            <p><label>Geslacht: </label></p>
+            <p><label><input type="radio" name="geslacht" value="man" />Man</label></p>
+            <p><label><input type="radio" name="geslacht" value="vrouw" />Vrouw</label></p>
+            <p><label><input type="radio" name="geslacht" value ="anders"/>Anders</label></p>
+            <p><label>Favoriete Cuisine: </label></p>
+            <p><label> <input type="radio" name="cuisine" value="frans"/>Frans</label><label><input type="radio" name="cuisine" value="italiaans"/> Italiaans</label><label><input type="radio" name="cuisine" value="spaans"/>Spaans</label>
+                <label><input type="radio" name="cuisine" value="arabisch"/>Arabisch </label></p>
+            <p><label>Favoriete Kleur Schort: <input type="color" name="color" /></label></p>
+
+            <p> Biografie:</p>
+            <p><textarea rows="10" cols="40" name="text"></textarea> </p>
+            <p><label>Upload hier je laatste recept: <input type="file" name="recept" /></label></p>
+            <p><label>Url naar je eigen website: <input type="url" name="website" /></label></p>
+            <p><label><input type="reset" /></label>
+                <label><input type="submit" /></label></p>
+
+        </form>
+    </main>
+    <footer>
+        <p>
+            <a href=" index.html ">
+                <h3>Terug naar de beginpagina</h3>
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
