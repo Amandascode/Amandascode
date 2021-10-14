@@ -1,0 +1,21 @@
+let person = { name: 'Amanda', age: 55 };
+console.log(person);
+console.log(person.name);
+console.log(person.age);
+person['name'];
+console.log['name'];
+let evaluations = [7, 10, 9];
+console.log(evaluations);
+let selectedColors = ["groen", "blauw", "rood"];
+console.log(selectedColors);
+console.log(selectedColors.length);
+console.log(selectedColors[0]);
+selectedColors.push("geel");
+console.log(selectedColors);
+selectedColors.push(5);
+console.log(selectedColors);
+console.log(selectedColors[selectedColors.length - 1])
+let greeting = { greeting: "hi ik ben een object" };
+selectedColors.push(greeting);
+console.log(selectedColors);
+console.log(selectedColors[selectedColors.length - 1]);
