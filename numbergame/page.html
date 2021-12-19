@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Click the button</p>
+
+    <button onclick="myFunction()">Your name</button>
+    <button onclick="myFunction2()">Your guess</button>
+
+    <p id="naam"></p>
+    <p id="correct"></p>
+    <p id="trials"></p>
+    <p id="notcorrect"></p>
+    <p id="guess"></p>
+
+    <script>
+        let correctGuess = Math.floor(Math.random() * 25);
+        document.getElementById("correct").innerHTML = correctGuess
+
+        function myFunction() {
+            var person = prompt("Please enter your name", "Name");
+            if (person != null) {
+                document.getElementById("naam").innerHTML =
+                    "Hey " + person;
+            }
+        }
+        const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+        async function myFunction2() {
+            var guess1 = 0
+            guesses = []
+            do {
+                document.getElementById("guess").innerHTML = "Unfortunately, that is not correct!"
+                document.getElementById("trials").innerHTML += guess1 + ",";
+                await delay(50);
+                guess1 = prompt("Enter your guess");
+
+            } while (guess1 != correctGuess);
+            document.getElementById("guess").innerHTML =
+                "Correctly guessed " + guess1;
+        }
+    </script>
+
+</body>
+
+</html>
